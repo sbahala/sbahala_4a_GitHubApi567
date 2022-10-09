@@ -12,7 +12,7 @@ jobs:
       - run: 
           command: |
             pip install requests
-            requests --junitxml=test-results/junit.xml GitHubApi.py
+            requests --junitxml=test-results/junit.xml TestGitHubAp.py
       - store_test_results:
           path: test-results
 workflows:
