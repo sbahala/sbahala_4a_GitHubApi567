@@ -12,7 +12,7 @@ from GitHubApi import getCommits_url
 
 
 class TesttestApi(unittest.TestCase):
-    @patch('testApi.requests.get')
+    @patch('GitHubApi.requests.get')
    
     def testNumberofRepo(self,mock):
         mock.get('https://api.github.com/users/sbahala/repos', text='success')
