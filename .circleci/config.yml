@@ -14,7 +14,7 @@ jobs:
             pip install --upgrade pip
             pip install requests
             pip install pytest
-            pytest --junitxml=test-results/junit.xml TestGitHubAp.py
+            pytest --junitxml=test-results/junit.xml TestGitHubApi.py
       - store_test_results:
           path: test-results
 workflows:
