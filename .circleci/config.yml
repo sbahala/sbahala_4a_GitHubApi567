@@ -17,6 +17,6 @@ jobs:
       - store_test_results:
           path: test-results
 workflows:
-  testing_triangles:
+  testing_GitHubApi:
     jobs:
       - build-and-test
