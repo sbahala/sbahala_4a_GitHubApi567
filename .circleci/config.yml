@@ -13,6 +13,7 @@ jobs:
           command: |
             pip install --upgrade pip
             pip install requests
+            pip install pytest
             pytest --junitxml=test-results/junit.xml TestGitHubAp.py
       - store_test_results:
           path: test-results
