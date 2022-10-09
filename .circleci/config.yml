@@ -11,6 +11,7 @@ jobs:
       - checkout
       - run: 
           command: |
+            pip install --upgrade pip
             pip install requests
             requests --junitxml=test-results/junit.xml TestGitHubAp.py
       - store_test_results:
