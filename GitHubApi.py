@@ -21,7 +21,6 @@ def getResp(user):
     getRepos_url = "https://api.github.com/" + "users" + "/" + f'{user}' + "/repos"
     resp = requests.get(getRepos_url)
     repo_json = resp.json()
-    print(f'Print Repositories and Number of commits from Github for user :{user}')
     if len(repo_json) != '':
         for i in repo_json:
             num = getCommits_url(f'{user}',f'{i["name"]}')
